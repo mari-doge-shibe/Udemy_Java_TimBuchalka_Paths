@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Main {
 
@@ -13,7 +14,8 @@ public class Main {
         printFile(path);
         Path filePath = FileSystems.getDefault().getPath("files","SubdirectoryFile.txt");
         printFile(filePath);
-
+        filePath = Paths.get("/Users/marisuzuki/Documents/Udemy_Java_Masterclass/OutThere.txt");
+        printFile(filePath);
     }
 
     private static void printFile(Path path) {
