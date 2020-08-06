@@ -12,9 +12,14 @@ public class Main {
     public static void main(String[] args) {
         Path path = FileSystems.getDefault().getPath("WorkingDirectoryFile.txt");
         printFile(path);
-        Path filePath = FileSystems.getDefault().getPath("files","SubdirectoryFile.txt");
+//        Path filePath = FileSystems.getDefault().getPath("files","SubdirectoryFile.txt");
+        Path filePath = Paths.get(".","files","SubdirectoryFile.txt");
+
         printFile(filePath);
-        filePath = Paths.get("/Users/marisuzuki/Documents/Udemy_Java_Masterclass/OutThere.txt");
+//        filePath = Paths.get("/Users/marisuzuki/Documents/Udemy_Java_Masterclass/OutThere.txt");
+        // filePath can be broken into three areas
+        filePath = Paths.get("/Users/marisuzuki/Documents","/Udemy_Java_Masterclass","OutThere.txt");
+
         printFile(filePath);
 
         filePath = Paths.get(".");
