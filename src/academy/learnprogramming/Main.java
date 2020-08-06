@@ -16,6 +16,10 @@ public class Main {
         printFile(filePath);
         filePath = Paths.get("/Users/marisuzuki/Documents/Udemy_Java_Masterclass/OutThere.txt");
         printFile(filePath);
+
+        filePath = Paths.get(".");
+        System.out.println(filePath.toAbsolutePath());
+
     }
 
     private static void printFile(Path path) {
