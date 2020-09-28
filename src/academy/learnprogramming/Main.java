@@ -15,7 +15,7 @@ public class Main {
             Path copyFile = FileSystems.getDefault().getPath("Examples", "file1copy.txt");
             Files.copy(sourceFile, copyFile);
         } catch(IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
     }
