@@ -9,8 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            Path fileToMove = FileSystems.getDefault().getPath("Examples", "file1copy.txt");
-            Path destination = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy.txt");
+            Path fileToMove = FileSystems.getDefault().getPath("Examples", "file1.txt");
+            Path destination = FileSystems.getDefault().getPath("Examples", "file2.txt");
             Files.move(fileToMove, destination);
 
 //            Path sourceFile = FileSystems.getDefault().getPath("Examples", "file1.txt");
