@@ -9,6 +9,11 @@ public class Main {
 
     public static void main(String[] args) {
         try {
+
+//            Path fileToCreate = FileSystems.getDefault().getPath("Examples", "file2.txt");
+//            Files.createFile(fileToCreate);
+            Path dirToCreate = FileSystems.getDefault().getPath("Examples", "Dir4");
+            Files.createDirectory(dirToCreate);
 //            Path fileToDelete = FileSystems.getDefault().getPath("Examples", "Dir1", "file1copy.txt");
 //            Files.deleteIfExists(fileToDelete);
 
